@@ -1,0 +1,32 @@
+
+  /* Experimental accordion menu
+   * I decided the gain was too low for the hassle,
+   * but you can include and check it out if you would like to.
+   */
+  .sidebar {
+    overflow: hidden;
+    height: 2em;
+    animation-name: collapse-control;
+    animation-duration: 0.2s;
+  }
+
+  .sidebar:after {
+    display: flex;
+    justify-content: flex-end;
+    pointer-events: none;
+    width: 0;
+    text-align: right;
+    font-size: smaller;
+    content: '(expand)';
+  }
+
+  .sidebar:hover {
+    height: initial;
+    animation-name: expand-control;
+    animation-duration: 0.2s;
+  }
+
+  .sidebar:hover:after {
+    content: '(expanded)';
+  }
+  /* END Experimental accordion menu */
