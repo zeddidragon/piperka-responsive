@@ -1,4 +1,4 @@
-@media (max-width: 640px) {
+@media (max-width: 468px) {
   /* Body-wide margins waste precious screen-space */
   html body {
     margin: 0;
@@ -243,13 +243,18 @@
     padding-top: 5em;
   }
 
-  #header table {
+  #header div[id] {
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
-    width: initial !important;
     z-index: 1;
+    background-color: #ddd;
+  }
+
+  #header table {
+    width: initial !important;
+    max-width: 468px;
   }
 
   #header table img {
