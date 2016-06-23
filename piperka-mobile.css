@@ -209,4 +209,50 @@
     display: flex;
     flex-direction: column;
   }
+
+  /* Bottom ad */
+
+  /* First, we make room for scrolling all the way to the bottom + ad height */
+  body {
+    padding-bottom: 3em;
+  }
+
+  #smalladbg {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    /* Turns out I can override inline styles */
+    width: initial !important;
+  }
+
+  #smalladbg table {
+    width: initial !important;
+    max-width: 351px;
+  }
+  
+  #smalladbg table img {
+    height: auto !important;
+  }
+
+  /* Top ad */
+
+  /* First we make room over the header for the ad */
+  
+  #header  {
+    padding-top: 5em;
+  }
+
+  #header table {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: initial !important;
+    z-index: 1;
+  }
+
+  #header table img {
+    height: auto !important;
+  }
 }
