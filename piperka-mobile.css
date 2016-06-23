@@ -13,6 +13,16 @@
     padding: 0 0.5em;
   }
 
+  div#header {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  div#header a[href="./"] {
+    float: none;
+    flex-basis: 50%;
+  }
+
   div.header img[src] {
     float: none;
   }
